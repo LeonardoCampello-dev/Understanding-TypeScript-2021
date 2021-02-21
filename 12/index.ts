@@ -2,8 +2,8 @@ function sumNumbers(x: number, y: number) {
   // Bad implementation, we can solve this easily with TypeScript.
   // if (typeof x !== "number" || typeof y !== "number") {
   //   throw new Error("Incorrect input!");
-  // } 
-  
+  // }
+
   return x + y;
 }
 
