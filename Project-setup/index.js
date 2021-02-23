@@ -1,7 +1,13 @@
+var Role;
+(function (Role) {
+    Role[Role["ADMIN"] = 1] = "ADMIN";
+    Role[Role["AUTHOR"] = 2] = "AUTHOR";
+    Role[Role["READ_ONLY"] = 3] = "READ_ONLY";
+})(Role || (Role = {}));
 var person = {
     name: "Leonardo",
     age: 20,
     hobbies: ["music", "games", "sports"],
-    role: [1, "developer"]
+    role: Role.ADMIN
 };
 console.log(person);
