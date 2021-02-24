@@ -1,13 +1,14 @@
-var Role;
-(function (Role) {
-    Role[Role["ADMIN"] = 1] = "ADMIN";
-    Role[Role["AUTHOR"] = 2] = "AUTHOR";
-    Role[Role["READ_ONLY"] = 3] = "READ_ONLY";
-})(Role || (Role = {}));
-var person = {
-    name: "Leonardo",
-    age: 20,
-    hobbies: ["music", "games", "sports"],
-    role: Role.ADMIN
-};
-console.log(person);
+function combine(firstInput, secondInput) {
+    var result;
+    if (typeof firstInput === "number" && typeof secondInput === "number") {
+        result = firstInput + secondInput;
+    }
+    else {
+        result = firstInput.toString() + secondInput.toString();
+    }
+    return result;
+}
+var combinedAges = combine(20, 21);
+console.log(combinedAges);
+var combinedNames = combine("Leonardo", "Bianca");
+console.log(combinedNames);
